@@ -9,6 +9,7 @@ ext/rinchi-gem/rinchi/
 ext/rinchi-gem/RInChI/
 ext/rinchi-gem/rinchi.o
 ext/rinchi-gem/rinchi_wrap.*
+ext/rinchi-gem/rinchi.so
 
 
 .tool-versions
