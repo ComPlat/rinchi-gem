@@ -2,3 +2,13 @@
 .bundle
 Gemfile.lock
 pkg/*
+
+# ignore build artifacts
+ext/rinchi-gem/Makefile
+ext/rinchi-gem/rinchi/
+ext/rinchi-gem/RInChI/
+ext/rinchi-gem/rinchi.o
+ext/rinchi-gem/rinchi_wrap.*
+
+
+.tool-versions
