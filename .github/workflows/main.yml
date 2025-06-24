@@ -2,11 +2,11 @@ name: Ruby
 
 on:
   push:
-    branches: 
+    branches:
       - main
 
   pull_request:
-    branches: 
+    branches:
       - main
 
 jobs:
@@ -17,6 +17,7 @@ jobs:
       matrix:
         ruby:
           - '2.7.8'
+          - '3.3.8'
 
     steps:
     - uses: actions/checkout@v4
@@ -28,7 +29,7 @@ jobs:
     - name: bundle
       run: bundle install
     - name: compile
-      run: | 
+      run: |
         cd ext/rinchi-gem/
         ruby extconf.rb && make
     - name: test
